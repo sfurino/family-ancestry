@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bonina &amp; Lisuzzo Family Records</title>
+<meta name="description" content="What the public records say about our family's Italian citizenship: the Bonina line from Milazzo and the Lisuzzo line from Lascari, with the records themselves.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: a dossier. One reading column for the story; full-width bands for the two family lines,
+   the records and the document table. Cool paper, Tyrrhenian blue for links and marks. */
+:root{
+  --paper:#f5f6f4; --panel:#e9edf0; --ink:#1c2229; --ink-2:#4e5862; --rule:#d3d8dc;
+  --sea:#1b5f8e; --sea-ink:#0f3c5c; --sea-tint:#dbe8f1;
+  --ok:#2d7a4f; --ok-bg:#e1f0e6; --warn:#9a6a12; --warn-bg:#f6ecd4; --bad:#a33a3a; --bad-bg:#f5e1e1; --lead:#5e55a8; --lead-bg:#e7e4f5;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"Cascadia Mono",Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --paper:#141a20; --panel:#1c252e; --ink:#e6e9ec; --ink-2:#a4aeb7; --rule:#2c3640;
+  --sea:#7ab6dd; --sea-ink:#a9d3ef; --sea-tint:#1f3141;
+  --ok:#7fc99a; --ok-bg:#1d3327; --warn:#e0b25c; --warn-bg:#3a2e14; --bad:#e58b8b; --bad-bg:#3c2222; --lead:#b4abe6; --lead-bg:#2a2742;
+  color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --paper:#141a20; --panel:#1c252e; --ink:#e6e9ec; --ink-2:#a4aeb7; --rule:#2c3640;
+  --sea:#7ab6dd; --sea-ink:#a9d3ef; --sea-tint:#1f3141;
+  --ok:#7fc99a; --ok-bg:#1d3327; --warn:#e0b25c; --warn-bg:#3a2e14; --bad:#e58b8b; --bad-bg:#3c2222; --lead:#b4abe6; --lead-bg:#2a2742;
+  color-scheme:dark; }
+
+*{box-sizing:border-box}
+html{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--sea);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--sea-ink)}
+:focus-visible{outline:3px solid var(--sea);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.1rem,5.5vw,3.4rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,3.6vw,2.2rem);margin-block:0 .6em}
+h3{font-size:1.35rem;margin-block:1.2em .4em}
+h4{font-size:1.2rem;font-weight:600}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.prose{max-width:68ch}
+.prose ul,.prose ol{padding-left:1.3em}
+.prose li{margin-bottom:.45em}
+.eyebrow{font-family:var(--body);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-bottom:.9em}
+.small{font-size:.92rem;color:var(--ink-2)}
+.mono{font-family:var(--mono);font-size:.85em}
+hr.sep{border:0;border-top:1px solid var(--rule);margin:0}
+section{padding-block:clamp(40px,6vw,72px)}
+section.band{background:var(--panel)}
+
+/* header + nav */
+header.top{padding-block:clamp(36px,6vw,80px) clamp(28px,4vw,48px)}
+.lede{font-family:var(--display);font-size:clamp(1.2rem,2.4vw,1.5rem);line-height:1.4;max-width:34em;margin-top:.9em;color:var(--ink)}
+.status{display:flex;flex-wrap:wrap;gap:.5em 1.2em;margin-top:1.4em;font-size:.92rem;color:var(--ink-2)}
+.status b{color:var(--ink);font-weight:600}
+nav.toc{border-block:1px solid var(--rule);padding-block:.7em}
+nav.toc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.3em 1.6em;font-size:.95rem}
+nav.toc a{text-decoration:none;color:var(--ink-2)}
+nav.toc a:hover{color:var(--sea)}
+
+/* in short */
+.short{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2em 2em;counter-reset:n}
+.short div{position:relative;padding-left:2.4em}
+.short div::before{counter-increment:n;content:counter(n);position:absolute;left:0;top:-.1em;font-family:var(--display);font-size:1.7rem;color:var(--sea);line-height:1}
+
+/* names box */
+.names{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.6em 1.6em;margin-bottom:1.6em}
+.names div{border-left:3px solid var(--sea);padding-left:.7em}
+.names b{display:block}
+
+/* family lines */
+.lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:2.4em}
+.line h3{margin-top:0}
+.gen{position:relative;padding-left:1.4em;padding-bottom:1.3em;border-left:2px solid var(--rule)}
+.gen:last-child{padding-bottom:0}
+.gen::before{content:"";position:absolute;left:-7px;top:.45em;width:12px;height:12px;border-radius:50%;background:var(--sea)}
+.gen .who{font-family:var(--display);font-size:1.25rem;font-weight:500}
+.gen .meta{color:var(--ink-2);font-size:.95rem}
+.gen p{margin:.3em 0 0;font-size:1rem;max-width:60ch}
+.chips{display:flex;flex-wrap:wrap;gap:.4em;margin-top:.5em}
+.chip{display:inline-block;font-size:.78rem;letter-spacing:.04em;padding:.15em .6em;border-radius:3px;font-weight:600;white-space:nowrap}
+.chip-it{background:var(--ok-bg);color:var(--ok)}
+.chip-us{background:var(--sea-tint);color:var(--sea-ink)}
+.chip-q{background:var(--warn-bg);color:var(--warn)}
+.chip-have{background:var(--ok-bg);color:var(--ok)}
+.chip-located{background:var(--warn-bg);color:var(--warn)}
+.chip-partial{background:var(--warn-bg);color:var(--warn)}
+.chip-lead{background:var(--lead-bg);color:var(--lead)}
+.chip-missing{background:var(--bad-bg);color:var(--bad)}
+
+/* tables */
+.tablewrap{overflow-x:auto;margin-block:1em 1.4em}
+table{border-collapse:collapse;width:100%;font-size:.97rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:.6em .7em;border-bottom:1px solid var(--rule)}
+th{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+td.who{font-weight:600;min-width:11em}
+td .doc{color:var(--ink-2);font-size:.92rem}
+td.held{color:var(--ink-2);font-size:.92rem;min-width:12em}
+.matrix-link{display:block;font-size:.85rem;margin-top:.3em}
+table.records1940 td:first-child{font-weight:600;white-space:nowrap}
+
+/* timeline */
+.timeline{display:grid;grid-template-columns:7.5em 1fr;gap:.35em 1em;max-width:70ch}
+.timeline dt{font-family:var(--display);font-weight:500;color:var(--sea-ink);font-variant-numeric:tabular-nums}
+.timeline dd{margin:0;padding-bottom:.35em;border-bottom:1px solid var(--rule)}
+.timeline dd .src{color:var(--ink-2);font-size:.9rem}
+@media (max-width:480px){.timeline{grid-template-columns:1fr}.timeline dt{margin-top:.6em}.timeline dd{border:0}}
+
+/* records */
+.record{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:1.4em;padding-block:1.6em;border-top:1px solid var(--rule)}
+.record:first-of-type{border-top:0}
+.figs{display:grid;gap:.6em}
+.fig img{border:1px solid var(--rule);background:#fff}
+.record-text p{font-size:1rem}
+.record-text .cite{font-size:.86rem;color:var(--ink-2)}
+.record-text .links{font-size:.92rem}
+@media (max-width:700px){.record{grid-template-columns:1fr}}
+.chart{margin-top:1.2em}
+.chart img{border:1px solid var(--rule);background:#fff;max-height:70vh;width:auto}
+
+/* scenarios */
+table.means td:first-child{font-weight:600;min-width:12em}
+.ask{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.4em 2em}
+.ask h4{margin-bottom:.4em}
+.ask p{font-size:1rem}
+footer{padding-block:2.5em 3.5em;color:var(--ink-2);font-size:.92rem;border-top:1px solid var(--rule)}
+@media (prefers-reduced-motion:no-preference){a.fig img{transition:transform .2s}a.fig:hover img{transform:translateY(-2px)}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">Milazzo · Lascari · Manhattan · Brooklyn · Albany</div>
+    <h1>Bonina &amp; Lisuzzo Family Records</h1>
+    <p class="lede">What the public records say about our family's Italian citizenship, with the records themselves. Gathered from free archives in October 2026 for Sandra, Stephen and Tom, and for everyone who comes after them.</p>
+    <div class="status"><span><b>Status:</b> preliminary read, research copies</span><span><b>Not</b> legal advice</span><span><b>Updated:</b> 2026-10-03</span></div>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap"><ul>
+  <li><a href="#short">In short</a></li>
+  <li><a href="#law">The 2025 law</a></li>
+  <li><a href="#bonina">Bonina line</a></li>
+  <li><a href="#q1940">The 1940 question</a></li>
+  <li><a href="#lisuzzo">Lisuzzo line</a></li>
+  <li><a href="#means">What it means</a></li>
+  <li><a href="#timeline">Timeline</a></li>
+  <li><a href="#records">The records</a></li>
+  <li><a href="#matrix">What we have</a></li>
+  <li><a href="#asks">What we need from the family</a></li>
+  <li><a href="#next">What we can still look for</a></li>
+  <li><a href="#method">How this was found</a></li>
+</ul></div></nav>
+
+<section id="short"><div class="wrap">
+  <h2>In short</h2>
+  <div class="names prose">
+    <div><b>Papa</b> Stephen, 1935–2014, our grandfather</div>
+    <div><b>Nana</b> Stella, 1932–2026, our grandmother</div>
+    <div><b>Papa Petey</b> Peter Bonina, 1909–1994, Papa's father</div>
+    <div><b>Grandma Jean</b> Angelica Muro, 1912–2001, Papa's mother</div>
+  </div>
+  <div class="short">
+    <div><p><b>Stefano Bonina</b> (born Milazzo, Sicily, 1865) came to Brooklyn in 1900 and, as far as four of five records show, stayed an Italian citizen until he died in 1948. That makes <b>Papa Petey</b> (born Brooklyn 1909) and <b>Papa</b> (born Brooklyn 1935) Italian citizens by birth, under the old rules and the new.</p></div>
+    <div><p>On <b>Nana's</b> side, <b>Giuseppe Lisuzzo</b> of Lascari was an Italian subject in 1906 and was living back in Lascari in 1924. His son, born in Manhattan in 1901, was admitted home as a US citizen in 1924 and married Santa Cesare in Lascari in 1926. Nana (born Albany 1932) was Italian by birth too.</p></div>
+    <div><p>Under Italy's <b>2025 law</b>, none of this passes <i>by descent</i> to Sandra, Stephen or Tom, or to any of the grandchildren: their parents and grandparents were born in America, so they were never "exclusively Italian".</p></div>
+    <div><p>It does open the <b>two-years-of-residence route</b>: a foreigner whose parent or grandparent was an Italian citizen by birth can naturalize after two years of legal residence in Italy. That fits the three siblings through their parents, and the grandchildren through Papa and Nana.</p></div>
+    <div><p>The 2025 law is before the <b>EU Court of Justice</b>. If it is reversed (decision expected late 2027 or 2028), both lines qualify by descent all the way down. The records on this page are the start of that file.</p></div>
+  </div>
+</div></section>
+
+<hr class="sep">
+<section id="law"><div class="wrap prose">
+  <h2>The 2025 law, briefly</h2>
+  <p>Until March 2025 Italy recognized citizenship by descent with no limit on generations: you only had to show an unbroken line from an Italian-born ancestor, with nobody in the line having naturalized elsewhere before the next child was born. Decree-law 36/2025, converted into Law 74/2025, added article 3-bis: a person born outside Italy who holds another citizenship is treated as never having been Italian, unless an exception applies. The exception that matters for families like ours: a <b>parent or grandparent held exclusively Italian citizenship</b> on the day the person was born (or on the day that ancestor died, if earlier).</p>
+  <p>Italy's Constitutional Court upheld the law in March 2026. In July 2026 it asked the EU Court of Justice whether taking citizenship away retroactively is compatible with EU law (case C-816/26). Until that court rules, the law applies in full. Separately, the law cut the residence requirement for naturalization from three years to two for anyone with a parent or grandparent who "is or was a citizen by birth", and since late 2025 descendants of Italians from the United States can get a work visa outside the annual quotas.</p>
+  <p class="small">The two things a consulate or court asks for are the same under both sets of rules: civil records for every link in the chain (birth, marriage, death), and proof of whether the Italian-born ancestor ever naturalized abroad. That is what the records below are for.</p>
+</div></section>
+
+<section class="band" id="bonina"><div class="wrap">
+  <h2>The Bonina line</h2>
+  <p class="prose">From Milazzo, on the north coast of Sicily near Messina, to Fourth Avenue in Brooklyn. Each step below is backed by a record on this page unless marked otherwise.</p>
+  <div class="lines">
+    <div class="line">
+      <h3>Father to son, Milazzo to Brooklyn</h3>
+      <div class="gen"><div class="who">Giovanni Bonina and Adelaide Marini</div><div class="meta">Milazzo · 1825–1907 and 1833–1910 (2002 family chart; the marriage act names them)</div><p>Giovanni is "proprietario", a landowner, on Stefano's birth act.</p></div>
+      <div class="gen"><div class="who">Stefano Bonina and Natala Trimboli</div><div class="meta">Stefano: born Milazzo 25 Oct 1865, died Brooklyn 23 Feb 1948 · Natala: born Milazzo about 1872, died before 1920</div><p>Married in Milazzo on 5 June 1894. Arrived in New York in September 1900 with Ida and Frances; Jennie, John and Peter were born in Brooklyn. A machine cutter in a clothing factory in 1910; retired by 1920, widowed, at 187 4th Avenue; later with Peter's family at 1219 72nd Street, where he died.</p><div class="chips"><span class="chip chip-it">Italian by birth</span><span class="chip chip-it">Alien in 1910 and 1920 censuses</span><span class="chip chip-it">"Nationality Italy" in 1925</span><span class="chip chip-q">"Naturalized" in 1940 census</span><span class="chip chip-it">"Citizen of Italy" at death, 1948</span></div></div>
+      <div class="gen"><div class="who">Peter Bonina (Papa Petey) and Angelica Muro (Grandma Jean)</div><div class="meta">Peter: born 195 4th Avenue, Brooklyn, 20 Nov 1909, died 1994 · Jean: born Brooklyn 1912, died 2001</div><p>Married in Brooklyn on 25 June 1933 (family record; the certificate has not been found yet). Peter sold cosmetics wholesale. Witness, with Angelina, at his brother John's wedding in 1931.</p><div class="chips"><span class="chip chip-us">US citizen by birth</span><span class="chip chip-it">Italian by birth (father an alien in 1909)</span></div></div>
+      <div class="gen"><div class="who">Papa (Stephen) and Nana (Stella)</div><div class="meta">Stephen: born Brooklyn 1935, died 2014 · Stella: born Albany 1932, died 2026 · married 25 June 1960</div><p>Four years old on the 1940 census, in the same apartment as his grandfather Stefano.</p><div class="chips"><span class="chip chip-us">US citizen by birth</span><span class="chip chip-it">Italian by birth, if Stefano never naturalized</span></div></div>
+      <div class="gen"><div class="who">Sandra, Stephen and Tom</div><div class="meta">and the grandchildren: Sal and Stephanie; Diana, Gaby and Tommy; and Stephen's children</div><div class="chips"><span class="chip chip-us">US citizens by birth</span><span class="chip chip-q">Not Italian by descent under the 2025 law</span></div></div>
+    </div>
+    <div class="line">
+      <h3>The 2002 chart, from Papa and Gianni</h3>
+      <p class="small">Papa compiled this descendant chart with Gianni, his cousin in Milan, in 2002. It runs from Filippo Bonina in the 1600s down to our generation. Shown here cropped at the generation of Papa Petey and his brothers and sisters; the full chart names living relatives and is kept in the family. The dates on it are family research, not records, and so far the records agree with it.</p>
+      <div class="chart"><a href="records/full/bonina-tree-2002-ancestors.jpg" target="_blank" rel="noopener"><img src="records/web/bonina-tree-2002-ancestors.jpg" alt="The 2002 BONINA tree chart, cropped to the generations before Papa's" loading="lazy"></a></div>
+      <p class="small">Uncle Stephen has the CD of Gianni's files that this chart came from. Everything on that disk, not just this picture, is worth saving: the sources behind the chart are probably on it.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="q1940"><div class="wrap prose">
+  <h2>The 1940 question</h2>
+  <p>Everything on the Bonina side rests on one fact: that Stefano never became an American citizen. Five records speak to it.</p>
+  <div class="tablewrap"><table class="records1940">
+    <thead><tr><th>Year</th><th>Record</th><th>What it says</th><th>Who gave the answer</th></tr></thead>
+    <tbody>
+      <tr><td>1910</td><td>Federal census</td><td>"Al", alien</td><td>Someone in the household</td></tr>
+      <tr><td>1920</td><td>Federal census</td><td>"Al", alien</td><td>Someone in the household</td></tr>
+      <tr><td>1925</td><td>New York state census</td><td>"Nationality: Italy"</td><td>Someone in the household (index only; the image is on Ancestry)</td></tr>
+      <tr><td>1940</td><td>Federal census</td><td><b>"NA", naturalized</b></td><td><b>Grandma Jean</b> (marked with the circled X). She also gave his age as 60; he was 74.</td></tr>
+      <tr><td>1948</td><td>Death certificate</td><td>"Citizen of Italy at time of death"</td><td><b>Papa Petey</b>, his son, who lived with him</td></tr>
+    </tbody>
+  </table></div>
+  <p>Four records against one, and the one is a daughter-in-law's answer about a man whose own son said the opposite eight years later. But a census answer is not proof either way. Two things would settle it:</p>
+  <ul>
+    <li>A <b>USCIS Genealogy index search</b> ($30, about nine months). USCIS holds every naturalization from 1906 on and the alien-registration forms every non-citizen had to file in 1940–41. The answer comes back either as a naturalization file, an alien registration (which would prove he was still an alien in 1940), or nothing.</li>
+    <li>Anything the family kept: his <b>alien registration card</b> (a small card every non-citizen carried after 1940), an Italian passport, or naturalization papers, which would cut the other way and we would want to know.</li>
+  </ul>
+  <p>What hangs on it: whether <b>Papa</b> counts as "Italian by birth" under the 2025 law, which is what the grandchildren's residence route rests on. It does not affect Sandra, Stephen and Tom: their grandfather Papa Petey was born while Stefano was certainly still an alien.</p>
+</div></section>
+
+<section class="band" id="lisuzzo"><div class="wrap">
+  <h2>The Lisuzzo line</h2>
+  <p class="prose">From Lascari, a village on the coast between Palermo and Cefalù, to James Street in lower Manhattan, back to Lascari, and then to Albany. This side only came into focus in October 2026, and it turns out to be as strong as the Bonina side.</p>
+  <div class="lines">
+    <div class="line">
+      <h3>Father to son to daughter</h3>
+      <div class="gen"><div class="who">Giuseppe Lisuzzo and Maria Stella Cirrito</div><div class="meta">Lascari · Giuseppe born about 1867, Maria Stella about 1877</div><p>In New York from 1899 to 1905, living at 56 James Street in 1901. Took the family back to Lascari, and came over again alone in June 1906, recorded as an Italian subject. Back in Lascari by 1924, where his son named him as next of kin. Nothing suggests he ever became an American citizen.</p><div class="chips"><span class="chip chip-it">Italian subject, 1906</span><span class="chip chip-it">Living in Lascari, 1924</span></div></div>
+      <div class="gen"><div class="who">Giuseppe Lisuzzo Jr. and Santa Cesare</div><div class="meta">Giuseppe: born 56 James St, Manhattan, 10 Nov 1901, died Albany 1987 · Santa: born Lascari 12 Sept 1904, died Albany 1989</div><p>Raised in Lascari from about age three. Returned alone on 16 April 1924 and was admitted as a US citizen on the strength of his New York birth, which is almost certainly the "court case with the midwife" in the family story. Married Santa in Lascari on 5 September 1926 and brought her to New York three weeks later. Santa became a US citizen on 29 June 1931. By 1935 they ran a grocery store at 1130 Broadway in Rensselaer, across the river from Albany.</p><div class="chips"><span class="chip chip-us">Giuseppe: US citizen by birth</span><span class="chip chip-it">Giuseppe: Italian by birth (father Italian)</span><span class="chip chip-it">Santa: Italian by birth, US citizen 1931</span></div></div>
+      <div class="gen"><div class="who">Nana (Stella), and her brother Joseph</div><div class="meta">Stella: born Albany 7 April 1932, died 2026 · married Papa 25 June 1960</div><p>Eight years old on the 1940 census in Rensselaer.</p><div class="chips"><span class="chip chip-us">US citizen by birth</span><span class="chip chip-it">Italian by birth (grandfather still Italian)</span></div></div>
+    </div>
+    <div class="line prose">
+      <h3>Why this side matters</h3>
+      <p>Under the old rules the line Giuseppe → Giuseppe Jr. → Stella is unbroken: the father was Italian when the son was born, and the son never needed to naturalize because he was born American. Under the 2025 law, Nana meets the test if her grandfather was still only Italian on the day she was born in 1932. He had gone home to Lascari; the one thing left to confirm is when he died.</p>
+      <p>So for the grandchildren there are two separate ways to show "a grandparent who was a citizen by birth": Papa, which depends on the 1940 question, and Nana, which does not. For Sandra, Stephen and Tom, both of their grandfathers, Papa Petey and Giuseppe Jr., were Italian by birth, so their own route holds either way.</p>
+      <p class="small">Still to find on this side: Giuseppe Sr.'s birth and death acts in the Lascari registers (online, but not indexed by name), the 1926 marriage act, and Nana's Albany birth certificate.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="means"><div class="wrap prose">
+  <h2>What it means</h2>
+  <div class="tablewrap"><table class="means">
+    <thead><tr><th></th><th>Sandra, Stephen, Tom</th><th>The grandchildren</th></tr></thead>
+    <tbody>
+      <tr><td>Citizenship by descent, today</td><td><b>No.</b> Papa and Nana were born in America, so neither was "exclusively Italian" on the day their children were born.</td><td><b>No.</b> Same reason, one generation further on.</td></tr>
+      <tr><td>Naturalization after two years of legal residence in Italy</td><td><b>Yes, in principle.</b> Their grandfathers Papa Petey and Giuseppe Jr. were Italian citizens by birth. Needs a job or other basis to live in Italy; it is at the government's discretion, not automatic.</td><td><b>Yes, in principle,</b> through Papa or Nana as "a grandparent who was a citizen by birth". Papa's status depends on the 1940 question; Nana's does not. A lawyer has to confirm how a grandparent who died without ever being recognized is proven.</td></tr>
+      <tr><td>If the EU Court of Justice reverses the 2025 law</td><td><b>By descent, through either line.</b></td><td><b>By descent, through either line.</b> Every link would need certified records: see the table of what we have and what is missing.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">All of this is a careful reading of the records against the law as published, not a legal opinion. Before anyone files, pays for certified copies, or relies on it, it goes to an Italian citizenship lawyer or the consulate.</p>
+</div></section>
+
+<section class="band" id="timeline"><div class="wrap">
+  <h2>Timeline</h2>
+  <dl class="timeline">
+    <dt>25 Oct 1865</dt><dd>Stefano Bonina born in Milazzo. <span class="src">Birth act 384.</span></dd>
+    <dt>5 Jun 1894</dt><dd>Stefano marries Natala Trimboli in Milazzo. <span class="src">Marriage act 51.</span></dd>
+    <dt>1899</dt><dd>Giuseppe Lisuzzo arrives in New York. <span class="src">His 1906 manifest: "in the US 1899–1905".</span></dd>
+    <dt>Sept 1900</dt><dd>Stefano, Natala, Ida and Frances arrive in New York. <span class="src">Ellis Island index; 1910 census.</span></dd>
+    <dt>10 Nov 1901</dt><dd>Giuseppe Lisuzzo Jr. born at 56 James Street, Manhattan. <span class="src">Birth certificate 45084.</span></dd>
+    <dt>12 Sept 1904</dt><dd>Santa Cesare born in Lascari. <span class="src">Birth act 36.</span></dd>
+    <dt>about 1905</dt><dd>The Lisuzzos go back to Lascari. <span class="src">1906 manifest; family memory.</span></dd>
+    <dt>5 Jun 1906</dt><dd>Giuseppe Lisuzzo returns alone to New York, an Italian subject. <span class="src">Manifest, SS Luisiana.</span></dd>
+    <dt>20 Nov 1909</dt><dd>Papa Petey born at 195 4th Avenue, Brooklyn. <span class="src">Birth certificate 37139.</span></dd>
+    <dt>Apr 1910</dt><dd>Census: Stefano an alien, machine cutter, five children at home. <span class="src">1910 census.</span></dd>
+    <dt>Aug 1916 · Sept 1920</dt><dd>Stefano's daughters Ida and Frances marry in Brooklyn; the family is at 711 Union Street, then 187 4th Avenue. <span class="src">Marriage certificates.</span></dd>
+    <dt>Jan 1920</dt><dd>Census: Stefano widowed, an alien, at 187 4th Avenue with four children. <span class="src">1920 census.</span></dd>
+    <dt>16 Apr 1924</dt><dd>Giuseppe Lisuzzo Jr. returns from Lascari, admitted as a US citizen. <span class="src">Manifest, SS Dante Alighieri.</span></dd>
+    <dt>1925</dt><dd>State census: "Steve Bonnina", 60, nationality Italy, in Papa Petey's household. <span class="src">Index.</span></dd>
+    <dt>5 Sept 1926</dt><dd>Giuseppe Jr. marries Santa Cesare in Lascari; they land in New York on 12 October. <span class="src">Santa's petition; manifest.</span></dd>
+    <dt>29 Jun 1931</dt><dd>Santa Lisuzzo naturalized in Manhattan, certificate 3421424. <span class="src">Petition 130134.</span></dd>
+    <dt>22 Nov 1931</dt><dd>John Bonina marries Nancy Lombardi; Papa Petey and Grandma Jean are the witnesses. The family lives at 106 Garfield Place. <span class="src">Marriage certificate 16718.</span></dd>
+    <dt>7 Apr 1932</dt><dd>Nana born in Albany. <span class="src">Family; 1940 census.</span></dd>
+    <dt>25 Jun 1933</dt><dd>Papa Petey marries Grandma Jean in Brooklyn. <span class="src">Family chart and notes; certificate not yet found.</span></dd>
+    <dt>Oct 1935</dt><dd>Papa born in Brooklyn. <span class="src">Family; 1940 census.</span></dd>
+    <dt>Apr 1940</dt><dd>Census: Stefano, 74, with Papa Petey's family at 1219 72nd Street, marked "naturalized" by Grandma Jean. The Lisuzzos keep a grocery at 1130 Broadway, Rensselaer. <span class="src">1940 census, both pages.</span></dd>
+    <dt>23 Feb 1948</dt><dd>Stefano dies at 1219 72nd Street, "a citizen of Italy". <span class="src">Death certificate 4398.</span></dd>
+    <dt>25 Jun 1960</dt><dd>Papa marries Nana. <span class="src">Family; Brooklyn license index.</span></dd>
+    <dt>1987 · 1989</dt><dd>Giuseppe Lisuzzo Jr. and Santa die in the Albany area. <span class="src">Social Security index; Find a Grave.</span></dd>
+    <dt>1994 · 2001</dt><dd>Papa Petey and Grandma Jean die. <span class="src">Family chart.</span></dd>
+    <dt>2014 · 2026</dt><dd>Papa and Nana die.</dd>
+    <dt>28 Mar 2025</dt><dd>Italy's decree-law ends unlimited citizenship by descent; Law 74/2025 follows on 23 May.</dd>
+    <dt>Mar 2026</dt><dd>Italy's Constitutional Court upholds the law.</dd>
+    <dt>Jul 2026</dt><dd>The Constitutional Court refers the retroactivity question to the EU Court of Justice (C-816/26). Decision expected late 2027 or 2028.</dd>
+  </dl>
+</div></section>
+
+<section id="records"><div class="wrap">
+  <h2>The records</h2>
+  <p class="prose">Every image here is a research copy pulled from a public archive; click one for the full-size file. For an application, certified copies are ordered from the archive named under each record (and, for the Italian acts, from the town halls of Milazzo and Lascari).</p>
+  <h3>Bonina</h3>
+  <article class="record" id="rec-stefano-birth-1865"><div class="figs"><a class="fig" href="records/full/stefano-birth-1865.jpg" target="_blank" rel="noopener"><img src="records/web/stefano-birth-1865.jpg" alt="Stefano Bonina's birth act, Milazzo, 1865" loading="lazy"></a></div><div class="record-text"><h4>Stefano Bonina's birth act, Milazzo, 1865</h4><p>Act no. 384 of the Milazzo civil birth register: Stefano, born 25 October 1865 at 8 a.m. in his parents' house, son of Giovanni Bonina, landowner, 40, and Adelaide Marini, 32. Declared by the midwife Giovanna Andriolo; baptized the same day (right-hand column).</p><p class="cite">Archivio di Stato di Messina, Stato civile italiano, Milazzo, Nati 1865, act 384 (page 385 of 469).</p><p class="links"><a href="records/full/stefano-birth-1865.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://antenati.cultura.gov.it/ark:/12657/an_ua405359/LyP83J9" target="_blank" rel="noopener">Antenati (Italian State Archives)</a></p></div></article>
+<article class="record" id="rec-stefano-marriage-1894"><div class="figs"><a class="fig" href="records/full/stefano-marriage-1894.jpg" target="_blank" rel="noopener"><img src="records/web/stefano-marriage-1894.jpg" alt="Stefano Bonina and Natala Trimboli's marriage act, Milazzo, 1894" loading="lazy"></a></div><div class="record-text"><h4>Stefano Bonina and Natala Trimboli's marriage act, Milazzo, 1894</h4><p>Act no. 51, 5 June 1894, Casa comunale di Milazzo: Stefano Bonina, 28, of independent means, son of Giovanni and Adelaide Marini, marries Natala Trimboli, 22, daughter of Tommaso Trimboli and Rosa Cangeri. Both signed.</p><p class="cite">Tribunale di Messina copy, Milazzo marriages 1894, act 51; FamilySearch image 527 of 1,513.</p><p class="links"><a href="records/full/stefano-marriage-1894.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:33S7-9TNK-9J7P" target="_blank" rel="noopener">FamilySearch (free sign-in)</a></p></div></article>
+<article class="record" id="rec-stefano-census-1910"><div class="figs"><a class="fig" href="records/full/stefano-census-1910.jpg" target="_blank" rel="noopener"><img src="records/web/stefano-census-1910.jpg" alt="1910 census, Fourth Avenue, Brooklyn: Stefano is an alien" loading="lazy"></a></div><div class="record-text"><h4>1910 census, Fourth Avenue, Brooklyn: Stefano is an alien</h4><p>Lines 15–21: "Bonina, Stephen", 44, immigrated 1900, citizenship "Al" (alien), machine cutter in a clothing factory; Natala, 38; Ida 14, Francis 10, Jennie 6, John 2, Peter 5 months. Papa Petey is the five-month-old.</p><p class="cite">1910 US Census, Brooklyn Ward 9, ED 189, sheet 7A, lines 15–21 (NARA T624).</p><p class="links"><a href="records/full/stefano-census-1910.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:33S7-9RJ6-PLG" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+<article class="record" id="rec-stefano-census-1920"><div class="figs"><a class="fig" href="records/full/stefano-census-1920.jpg" target="_blank" rel="noopener"><img src="records/web/stefano-census-1920.jpg" alt="1920 census, 187 4th Avenue, Brooklyn: still an alien" loading="lazy"></a></div><div class="record-text"><h4>1920 census, 187 4th Avenue, Brooklyn: still an alien</h4><p>Lines 32–36, written "Bonbonea": Stephen, head, 50, widowed, immigrated 1900, citizenship "Al" (alien), no occupation; Francis 19, Jennie 15, John 12, Peter 10. The family was not findable in the name index under any spelling; this page was located by address.</p><p class="cite">1920 US Census, Brooklyn Assembly District 8, ED 442, sheet 18A, lines 32–36 (NARA T625).</p><p class="links"><a href="records/full/stefano-census-1920.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:33SQ-GRXK-PG" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+<article class="record" id="rec-stefano-census-1940"><div class="figs"><a class="fig" href="records/full/stefano-census-1940.jpg" target="_blank" rel="noopener"><img src="records/web/stefano-census-1940.jpg" alt="1940 census, 1219 72nd Street, Brooklyn: the one record that says "naturalized"" loading="lazy"></a></div><div class="record-text"><h4>1940 census, 1219 72nd Street, Brooklyn: the one record that says "naturalized"</h4><p>Lines 2–6: Peter 31, Angelica 28, Steven 4 (Papa), a daughter 2, and "Steven, father, 60, widowed, born Italy", citizenship column "NA" (naturalized). The circled X marks Angelica as the person who answered; she also gave Stefano's age as 60 when he was 74. Peter's brother John's family is on lines 7–10.</p><p class="cite">1940 US Census, Brooklyn, ED 24-1062, lines 2–10 (NARA T627, image m-t0627-02573-00897).</p><p class="links"><a href="records/full/stefano-census-1940.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://catalog.archives.gov/id/133597297" target="_blank" rel="noopener">National Archives Catalog</a></p></div></article>
+<article class="record" id="rec-stefano-death-1948"><div class="figs"><a class="fig" href="records/full/stefano-death-1948.pdf" target="_blank" rel="noopener"><img src="records/web/stefano-death-1948-1.jpg" alt="Stefano Bonina's death certificate, Brooklyn, 1948: "citizen of Italy"" loading="lazy"></a></div><div class="record-text"><h4>Stefano Bonina's death certificate, Brooklyn, 1948: "citizen of Italy"</h4><p>Died 23 February 1948 at 1219 72nd Street, widowed. "Of what country was decedent a citizen at time of death? ITALY." Informant: Peter Bonina, son. Parents given as John Bonina and Adelaide "Cambrini" (Marini). Birth date given as 25 Oct 1879: day and month agree with Milazzo, the year is wrong.</p><p class="cite">NYC Municipal Archives, Kings County death certificate no. 4398 (1948), D-K-1948-0004398.</p><p class="links"><a href="records/full/stefano-death-1948.pdf" target="_blank" rel="noopener">full PDF</a> · <a href="https://a860-historicalvitalrecords.nyc.gov/view/7426043" target="_blank" rel="noopener">NYC Municipal Archives</a></p></div></article>
+<article class="record" id="rec-peter-birth-1909"><div class="figs"><a class="fig" href="records/full/peter-birth-1909.pdf" target="_blank" rel="noopener"><img src="records/web/peter-birth-1909-1.jpg" alt="Papa Petey's birth certificate, Brooklyn, 1909" loading="lazy"></a></div><div class="record-text"><h4>Papa Petey's birth certificate, Brooklyn, 1909</h4><p>"Pietro Tommaso Nicola Bonino", born 20 November 1909 at 195 4th Avenue, Brooklyn, to Stefano, 44, and Natala Trimboli, 38, both born in Italy. The surname is spelled "Bonino" on this one record.</p><p class="cite">NYC Municipal Archives, Kings County birth certificate no. 37139 (1909), B-K-1909-0037139.</p><p class="links"><a href="records/full/peter-birth-1909.pdf" target="_blank" rel="noopener">full PDF</a> · <a href="https://a860-historicalvitalrecords.nyc.gov/view/2144248" target="_blank" rel="noopener">NYC Municipal Archives</a></p></div></article>
+<article class="record" id="rec-john-marriage-1931"><div class="figs"><a class="fig" href="records/full/john-marriage-1931.pdf" target="_blank" rel="noopener"><img src="records/web/john-marriage-1931-1.jpg" alt="John Bonina and Nancy Lombardi's marriage certificate, Brooklyn, 1931 (page 1)" loading="lazy"></a><a class="fig" href="records/full/john-marriage-1931.pdf" target="_blank" rel="noopener"><img src="records/web/john-marriage-1931-2.jpg" alt="John Bonina and Nancy Lombardi's marriage certificate, Brooklyn, 1931 (page 2)" loading="lazy"></a></div><div class="record-text"><h4>John Bonina and Nancy Lombardi's marriage certificate, Brooklyn, 1931</h4><p>Papa Petey's brother John, 23, mechanic, of 106 Garfield Place, son of "Stephen" (Stefano) Bonina and Natalie Trimboli, married Nancy Lombardi on 22 November 1931 at Our Lady of Loreto church. The witnesses who signed the back: Peter Bonina and Angelina Muro, two years before their own wedding.</p><p class="cite">NYC Municipal Archives, Kings County marriage certificate no. 16718 (1931), M-K-1931-0016718.</p><p class="links"><a href="records/full/john-marriage-1931.pdf" target="_blank" rel="noopener">full PDF</a> · <a href="https://a860-historicalvitalrecords.nyc.gov/view/9802851" target="_blank" rel="noopener">NYC Municipal Archives</a></p></div></article>
+<article class="record" id="rec-ida-marriage-1916"><div class="figs"><a class="fig" href="records/full/ida-marriage-1916.pdf" target="_blank" rel="noopener"><img src="records/web/ida-marriage-1916-1.jpg" alt="Adelaide (Ida) Bonina and Carlo Smirti's marriage certificate, Brooklyn, 1916" loading="lazy"></a></div><div class="record-text"><h4>Adelaide (Ida) Bonina and Carlo Smirti's marriage certificate, Brooklyn, 1916</h4><p>Stefano's eldest daughter, 20, of 711 Union Street, born Messina, Italy, father Stefano, mother Natalia Trimboli; married 14 August 1916 at Borough Hall. Useful mainly for the family's address that year.</p><p class="cite">NYC Municipal Archives, Kings County marriage certificate no. 9974 (1916), M-K-1916-0009974.</p><p class="links"><a href="records/full/ida-marriage-1916.pdf" target="_blank" rel="noopener">full PDF</a> · <a href="https://a860-historicalvitalrecords.nyc.gov/view/8959033" target="_blank" rel="noopener">NYC Municipal Archives</a></p></div></article>
+<article class="record" id="rec-frances-marriage-1920"><div class="figs"><a class="fig" href="records/full/frances-marriage-1920.pdf" target="_blank" rel="noopener"><img src="records/web/frances-marriage-1920-1.jpg" alt="Francesca (Frances) Bonina and Todo Maiorana's marriage certificate, Brooklyn, 1920" loading="lazy"></a></div><div class="record-text"><h4>Francesca (Frances) Bonina and Todo Maiorana's marriage certificate, Brooklyn, 1920</h4><p>Stefano's daughter Frances, 20, of 187 4th Avenue, born Italy, father Stefano, mother Natalia Trimboli; married 5 September 1920 at Our Lady of Peace, 522 Carroll Street. The address is what led to the family's 1920 census page.</p><p class="cite">NYC Municipal Archives, Kings County marriage certificate no. 12821 (1920), M-K-1920-0012821.</p><p class="links"><a href="records/full/frances-marriage-1920.pdf" target="_blank" rel="noopener">full PDF</a> · <a href="https://a860-historicalvitalrecords.nyc.gov/view/9104056" target="_blank" rel="noopener">NYC Municipal Archives</a></p></div></article>
+  <h3>Lisuzzo</h3>
+  <article class="record" id="rec-giuseppe-jr-birth-1901"><div class="figs"><a class="fig" href="records/full/giuseppe-jr-birth-1901.pdf" target="_blank" rel="noopener"><img src="records/web/giuseppe-jr-birth-1901-1.jpg" alt="Giuseppe Lisuzzo Jr.'s birth certificate, Manhattan, 1901" loading="lazy"></a></div><div class="record-text"><h4>Giuseppe Lisuzzo Jr.'s birth certificate, Manhattan, 1901</h4><p>"Giuseppe Lisuzza", born 10 November 1901 at 56 James Street, Manhattan, to Giuseppe, 34, and Maria Stella Cirrito, 24, both born in Italy. Reported by Maria Di Martino of Oliver Street, almost certainly the midwife.</p><p class="cite">NYC Municipal Archives, Manhattan birth certificate no. 45084 (1901), B-M-1901-0045084.</p><p class="links"><a href="records/full/giuseppe-jr-birth-1901.pdf" target="_blank" rel="noopener">full PDF</a> · <a href="https://a860-historicalvitalrecords.nyc.gov/view/1289118" target="_blank" rel="noopener">NYC Municipal Archives</a></p></div></article>
+<article class="record" id="rec-giuseppe-sr-manifest-1906"><div class="figs"><a class="fig" href="records/full/giuseppe-sr-manifest-1906.jpg" target="_blank" rel="noopener"><img src="records/web/giuseppe-sr-manifest-1906.jpg" alt="Giuseppe Lisuzzo Sr. arrives at Ellis Island, 5 June 1906" loading="lazy"></a></div><div class="record-text"><h4>Giuseppe Lisuzzo Sr. arrives at Ellis Island, 5 June 1906</h4><p>SS Luisiana from Naples, list 40, line 14: Lisuzzo Giuseppe, 39, married, farm laborer, nationality Italy, stamped "non-immigrant alien" (a returning resident); "in the US before: 1899–1905, New York"; going to 3 Mulberry Street. He had taken the family back to Lascari and was coming over alone.</p><p class="cite">NARA T715; FamilySearch, New York Passenger Arrival Lists (Ellis Island), 1892–1925.</p><p class="links"><a href="records/full/giuseppe-sr-manifest-1906.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C95M-6VFL" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+<article class="record" id="rec-giuseppe-jr-manifest-1924"><div class="figs"><a class="fig" href="records/full/giuseppe-jr-manifest-1924.jpg" target="_blank" rel="noopener"><img src="records/web/giuseppe-jr-manifest-1924.jpg" alt="Giuseppe Lisuzzo Jr. returns from Lascari, 16 April 1924, admitted as a US citizen (page 1)" loading="lazy"></a><a class="fig" href="records/full/giuseppe-jr-manifest-1924-page2.jpg" target="_blank" rel="noopener"><img src="records/web/giuseppe-jr-manifest-1924-2.jpg" alt="Giuseppe Lisuzzo Jr. returns from Lascari, 16 April 1924, admitted as a US citizen (page 2)" loading="lazy"></a></div><div class="record-text"><h4>Giuseppe Lisuzzo Jr. returns from Lascari, 16 April 1924, admitted as a US citizen</h4><p>SS Dante Alighieri from Palermo, list 102, line 30: Lisuzzo Giuseppe, 23, single, labourer, Italian, from Lascari, nearest relative "father Lisuzzo Giuseppe, Lascari", bound for a cousin in Gary, Indiana. Stamped "U.S. CIT." and "ADMITTED". Page two: "ever in US before: yes, born"; place of birth "N.Y., New York".</p><p class="cite">NARA T715, roll 3475; FamilySearch, New York Passenger Arrival Lists (Ellis Island), 1892–1925.</p><p class="links"><a href="records/full/giuseppe-jr-manifest-1924.jpg" target="_blank" rel="noopener">full image 1</a> · <a href="records/full/giuseppe-jr-manifest-1924-page2.jpg" target="_blank" rel="noopener">full image 2</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9T3-P8VT-2" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+<article class="record" id="rec-santa-manifest-1926"><div class="figs"><a class="fig" href="records/full/santa-manifest-1926.jpg" target="_blank" rel="noopener"><img src="records/web/santa-manifest-1926.jpg" alt="Santa Cesare arrives with her husband, 12 October 1926 (page 1)" loading="lazy"></a><a class="fig" href="records/full/santa-manifest-1926-page2.jpg" target="_blank" rel="noopener"><img src="records/web/santa-manifest-1926-2.jpg" alt="Santa Cesare arrives with her husband, 12 October 1926 (page 2)" loading="lazy"></a></div><div class="record-text"><h4>Santa Cesare arrives with her husband, 12 October 1926</h4><p>SS Dante Alighieri from Palermo, list 13, line 6: Cesare Santa, 22, married, born Lascari, quota visa issued at Palermo 29 September 1926, father Giuseppe Cesare of Lascari, never in the US before; page two: "travelling with my husband Lisuzzo Giuseppe U.S.C." (US citizen), to 65 James Street. Three weeks after their wedding.</p><p class="cite">NARA T715, roll 3945; FamilySearch, New York Passenger and Crew Lists, 1909, 1925–1958.</p><p class="links"><a href="records/full/santa-manifest-1926.jpg" target="_blank" rel="noopener">full image 1</a> · <a href="records/full/santa-manifest-1926-page2.jpg" target="_blank" rel="noopener">full image 2</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:33S7-9PR1-9WPP" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+<article class="record" id="rec-santa-naturalization-1928"><div class="figs"><a class="fig" href="records/full/santa-naturalization-1928.jpg" target="_blank" rel="noopener"><img src="records/web/santa-naturalization-1928.jpg" alt="Santa Lisuzzo's petition for naturalization, filed 1928, granted 29 June 1931 (page 1)" loading="lazy"></a><a class="fig" href="records/full/santa-naturalization-1928-page2.jpg" target="_blank" rel="noopener"><img src="records/web/santa-naturalization-1928-2.jpg" alt="Santa Lisuzzo's petition for naturalization, filed 1928, granted 29 June 1931 (page 2)" loading="lazy"></a></div><div class="record-text"><h4>Santa Lisuzzo's petition for naturalization, filed 1928, granted 29 June 1931</h4><p>Petition no. 130134, US District Court, Southern District of New York (right-hand page): born 12 September 1904, "Laskose" (Lascari); arrived 12 October 1926; husband Giuseppe, "born 10 Nov 1901 at New York"; "Married Sept 5 1926 at Italy. Husb native American." Her husband signed as a citizen witness. The second image is the back of the petition: oath of allegiance, order admitting her, certificate no. 3421424, 29 June 1931.</p><p class="cite">National Archives at New York, RG 21; NARA M1972 roll 563; FamilySearch, New York, U.S. District and Circuit Court Naturalization Records, 1824–1991.</p><p class="links"><a href="records/full/santa-naturalization-1928.jpg" target="_blank" rel="noopener">full image 1</a> · <a href="records/full/santa-naturalization-1928-page2.jpg" target="_blank" rel="noopener">full image 2</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:3QS7-89HF-HTV" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+<article class="record" id="rec-santa-birth-1904"><div class="figs"><a class="fig" href="records/full/santa-birth-1904.jpg" target="_blank" rel="noopener"><img src="records/web/santa-birth-1904.jpg" alt="Santa Cesare's birth act, Lascari, 1904" loading="lazy"></a></div><div class="record-text"><h4>Santa Cesare's birth act, Lascari, 1904</h4><p>Act no. 36 (lower left): on 13 September 1904 the midwife Flavia Cesare, 46, declared that at 7 a.m. on the 12th, at via Regina Margherita 56, Giuseppa Polizzotto, housewife, wife of Giuseppe Cesare, gave birth to a girl named Santa. The father was away from the town. Lascari's registers are not name-indexed; this page was found through the register's own annual index.</p><p class="cite">Tribunale di Termini Imerese copy, Lascari, Nati 1904, act 36; FamilySearch collection "Italia, Palermo, Termini Imerese, Stato Civile (Tribunale), 1825–1941", image 1197 of 1397.</p><p class="links"><a href="records/full/santa-birth-1904.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:3QSQ-G9MZ-5D3V" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+<article class="record" id="rec-lisuzzo-census-1940"><div class="figs"><a class="fig" href="records/full/lisuzzo-census-1940.jpg" target="_blank" rel="noopener"><img src="records/web/lisuzzo-census-1940.jpg" alt="1940 census, 1130 Broadway, Rensselaer: Nana at eight" loading="lazy"></a></div><div class="record-text"><h4>1940 census, 1130 Broadway, Rensselaer: Nana at eight</h4><p>Lines 67–70: "Lissuzzo, Joseph", 39, born New York, grocery-store proprietor; "Sandra" (Santa), 36, born Italy; Joseph, 13; Stella, 8; same house in 1935. The enumerator marked Santa "AL" (alien) by mistake: she had been a citizen since 1931.</p><p class="cite">1940 US Census, Rensselaer city, Ward 4, ED 42-36, sheet 6B, lines 67–70 (NARA T627).</p><p class="links"><a href="records/full/lisuzzo-census-1940.jpg" target="_blank" rel="noopener">full image</a> · <a href="https://www.familysearch.org/ark:/61903/3:1:3QS7-L9MB-MGD4" target="_blank" rel="noopener">FamilySearch</a></p></div></article>
+</div></section>
+
+<section class="band" id="matrix"><div class="wrap">
+  <h2>What we have, and what is missing</h2>
+  <p class="prose">The full chain, link by link, as a consulate or court would want it. "Have" means a research copy is on this page or on file; a certified copy would still have to be ordered. Nothing here needs to be bought until a route is chosen.</p>
+  <h3>Bonina line</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Person</th><th>Record</th><th>Held by</th><th>Status</th></tr></thead>
+    <tbody>
+    <tr><td class="who">Stefano Bonina</td><td>birth 25 Oct 1865, Milazzo<div class="doc">atto di nascita no. 384 (1865)</div></td><td class="held">Archivio di Stato di Messina; for filing, the Comune di Milazzo</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-stefano-birth-1865">see the record</a></td></tr>
+<tr><td class="who">Stefano Bonina + Natala Trimboli</td><td>marriage 5 June 1894, Milazzo<div class="doc">atto di matrimonio no. 51 (1894)</div></td><td class="held">Tribunale di Messina copy; for filing, the Comune di Milazzo</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-stefano-marriage-1894">see the record</a></td></tr>
+<tr><td class="who">Stefano Bonina</td><td>proof that he never became a US citizen<div class="doc">USCIS Genealogy index search (would return any naturalization file or his 1940–41 alien registration); later, a certificate of non-existence of a naturalization record</div></td><td class="held">FamilySearch; NARA; USCIS</td><td><span class="chip chip-partial">Partly</span></td></tr>
+<tr><td class="who">Stefano Bonina</td><td>1910 census<div class="doc">household page</div></td><td class="held">FamilySearch / NARA</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-stefano-census-1910">see the record</a></td></tr>
+<tr><td class="who">Stefano Bonina</td><td>death 23 Feb 1948, Brooklyn<div class="doc">death certificate no. 4398</div></td><td class="held">NYC Municipal Archives</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-stefano-death-1948">see the record</a></td></tr>
+<tr><td class="who">Peter (Papa Petey) Bonina</td><td>birth 20 Nov 1909, Brooklyn<div class="doc">birth certificate no. 37139 (as "Bonino")</div></td><td class="held">NYC Municipal Archives</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-peter-birth-1909">see the record</a></td></tr>
+<tr><td class="who">Papa Petey and Grandma Jean</td><td>marriage 25 June 1933, Brooklyn<div class="doc">marriage certificate / license</div></td><td class="held">NYC Municipal Archives; City Clerk license index 1930–49</td><td><span class="chip chip-missing">Missing</span></td></tr>
+<tr><td class="who">Papa (Stephen)</td><td>birth, 1935, Brooklyn<div class="doc">long-form birth certificate</div></td><td class="held">NYC Dept. of Health</td><td><span class="chip chip-missing">Missing</span></td></tr>
+<tr><td class="who">Papa and Nana</td><td>marriage, 1960<div class="doc">marriage certificate (license no. 6908, Brooklyn)</div></td><td class="held">NYC City Clerk</td><td><span class="chip chip-located">Located</span></td></tr>
+<tr><td class="who">Papa (Stephen)</td><td>death, 2014, Queens<div class="doc">death certificate</div></td><td class="held">NYC Dept. of Health</td><td><span class="chip chip-missing">Missing</span></td></tr>
+<tr><td class="who">Papa Petey, Grandma Jean, Papa</td><td>1950 census<div class="doc">household page (not shown here: it lists living relatives)</div></td><td class="held">NARA</td><td><span class="chip chip-have">Have (research copy)</span></td></tr>
+<tr><td class="who">Sandra; Sandra and her husband; Sal</td><td>births and marriage<div class="doc">birth certificates and marriage certificate (held by the family or ordered by them)</div></td><td class="held">NYC / NYS vital records; family</td><td><span class="chip chip-missing">Missing</span></td></tr>
+<tr><td class="who">Stefano, Papa Petey, Grandma Jean, Papa</td><td>1940 census, 1219 72nd St<div class="doc">household page</div></td><td class="held">NARA Catalog</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-stefano-census-1940">see the record</a></td></tr>
+<tr><td class="who">Ida Bonina + Carlo Smirti; Frances Bonina + Todo Maiorana</td><td>marriages, Kings 14 Aug 1916 (cert 9974) and 5 Sept 1920 (cert 12821)<div class="doc">marriage certificates (Stefano named as father; addresses 711 Union St, 187 4th Ave)</div></td><td class="held">NYC Municipal Archives</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-ida-marriage-1916">see the record</a></td></tr>
+<tr><td class="who">John Bonina + Nancy Lombardi</td><td>marriage 22 Nov 1931, Loreto Church, Brooklyn<div class="doc">marriage certificate no. 16718 (Kings 1931)</div></td><td class="held">NYC Municipal Archives</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-john-marriage-1931">see the record</a></td></tr>
+<tr><td class="who">Stefano, John, Peter</td><td>1930 census<div class="doc">household page</div></td><td class="held">FamilySearch (browse by district)</td><td><span class="chip chip-missing">Missing</span></td></tr>
+<tr><td class="who">Stefano + children</td><td>1920 census, 187 4th Ave<div class="doc">household page (Brooklyn AD 8, ED 442, sheet 18A, lines 32–36; "Bonbonea")</div></td><td class="held">FamilySearch / NARA</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-stefano-census-1920">see the record</a></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Lisuzzo line</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Person</th><th>Record</th><th>Held by</th><th>Status</th></tr></thead>
+    <tbody>
+    <tr><td class="who">Giuseppe Lisuzzo Jr.</td><td>birth 10 Nov 1901, Manhattan<div class="doc">birth certificate no. 45084 (as "Lisuzza")</div></td><td class="held">NYC Municipal Archives</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-giuseppe-jr-birth-1901">see the record</a></td></tr>
+<tr><td class="who">Giuseppe Lisuzzo Sr.</td><td>naturalized before 10 Nov 1901?<div class="doc">1900 census; NYC pre-1906 naturalization index; Lascari records after his return</div></td><td class="held">FamilySearch; Antenati</td><td><span class="chip chip-partial">Partly</span></td></tr>
+<tr><td class="who">Santa (Cesare) Lisuzzo</td><td>US naturalization: petition filed 9 Feb 1928, admitted 29 June 1931<div class="doc">petition no. 130134 (front and back), certificate no. 3421424</div></td><td class="held">NARA at New York (RG 21, M1972 roll 563); FamilySearch</td><td><span class="chip chip-have">Have (research copy)</span></td></tr>
+<tr><td class="who">Giuseppe Lisuzzo Jr.</td><td>return to US 16 April 1924 (admitted as US citizen); return with Santa 12 Oct 1926<div class="doc">1924 manifest (both pages); Santa's 1926 manifest (both pages)</div></td><td class="held">NARA T715; FamilySearch</td><td><span class="chip chip-have">Have (research copy)</span></td></tr>
+<tr><td class="who">Santa Cesare</td><td>birth 12 Sept 1904, Lascari<div class="doc">atto di nascita no. 36 (1904)</div></td><td class="held">Tribunale di Termini Imerese copy on FamilySearch; Comune di Lascari for an *estratto*</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-santa-birth-1904">see the record</a></td></tr>
+<tr><td class="who">Giuseppe Jr. and Santa</td><td>marriage 5 Sept 1926, Lascari<div class="doc">atto di matrimonio</div></td><td class="held">Comune di Lascari</td><td><span class="chip chip-located">Located</span></td></tr>
+<tr><td class="who">Nana</td><td>birth, 1932, Albany<div class="doc">birth certificate</div></td><td class="held">Albany city registrar / NYS Dept. of Health</td><td><span class="chip chip-missing">Missing</span></td></tr>
+<tr><td class="who">Giuseppe Lisuzzo Sr.</td><td>arrival 5 June 1906, SS Luisiana (in the US 1899–1905)<div class="doc">passenger manifest, list 40 line 14</div></td><td class="held">FamilySearch / NARA T715</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-giuseppe-sr-manifest-1906">see the record</a></td></tr>
+<tr><td class="who">Giuseppe Lisuzzo Sr.</td><td>birth ~1866–67 and death, Lascari<div class="doc">atti di nascita / di morte</div></td><td class="held">FamilySearch collection 1947613</td><td><span class="chip chip-located">Located</span></td></tr>
+<tr><td class="who">Giuseppe Jr., Santa, Nana</td><td>1940 census, Rensselaer<div class="doc">household page</div></td><td class="held">FamilySearch / NARA</td><td><span class="chip chip-have">Have (research copy)</span> <a class="matrix-link" href="#rec-lisuzzo-census-1940">see the record</a></td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section id="asks"><div class="wrap">
+  <h2>What we need from the family</h2>
+  <div class="ask">
+    <div><h4>Gianni's CD</h4><p>Uncle Stephen has the disk of Gianni's research. A copy of everything on it, not just the chart, including old program files: the sources behind the chart are probably there, and maybe the Milazzo records themselves.</p></div>
+    <div><h4>Old papers</h4><p>Anything of Stefano's, Papa Petey's or Grandma Jean's: above all Stefano's alien registration card from 1940–41, which alone would settle the 1940 question. Also an Italian passport, naturalization papers, funeral or mass cards, a family Bible.</p></div>
+    <div><h4>Memories</h4><p>Which church Papa Petey and Grandma Jean married in, in 1933. Where the family lived around 1930. Anything anyone remembers about Stefano, or about the Lisuzzos in Albany.</p></div>
+    <div><h4>Later, from the direct descendants</h4><p>Papa's long-form birth certificate, Papa and Nana's marriage certificate, and Nana's Albany birth certificate can only be ordered by a child. Consulates want recently issued copies, so this waits until a route is chosen.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="next"><div class="wrap">
+  <h2>What we can still look for ourselves</h2>
+  <p class="prose">Besides what the family may have in a drawer, these are the searches still open. Most are free; the paid ones are marked.</p>
+  <div class="ask">
+    <div><h4>To settle the 1940 question</h4><p><b>USCIS Genealogy index search</b> for Stefano ($30, about nine months): returns any naturalization file and any 1940–41 alien registration. If nothing comes back, a <b>certificate of non-existence</b> of a naturalization record is the document a consulate accepts. Also worth a look: the <b>Lascari and Milazzo "cittadinanze" registers</b> (acts about gaining or losing Italian citizenship), and Stefano's <b>military service record</b> in the Messina state archive, which would show him as an Italian subject.</p></div>
+    <div><h4>The 1924 "court case"</h4><p>When Giuseppe Lisuzzo Jr. came back from Lascari in April 1924 he had to prove he was born in New York. Two places that proof might survive: a <b>US passport application</b> from 1924–25 (National Archives microfilm M1490, indexed on FamilySearch and Ancestry) and the <b>Ellis Island Board of Special Inquiry</b> records for his ship. Either would name his witnesses, possibly the midwife of the family story.</p></div>
+    <div><h4>The missing censuses</h4><p>Neither family has been found in the <b>1930 census</b>: the Boninas were not yet at Garfield Place, and the Lisuzzos were probably still on James Street. The <b>1925 New York state census</b> page for "Steve Bonnina" (image on Ancestry, which needs a subscription) would give the 1925 address, and from an address a census page can be found even when the name index fails, as the 1920 page was.</p></div>
+    <div><h4>Papa Petey and Grandma Jean's 1933 marriage</h4><p>Not in any free index. The <b>City Clerk's 1933 license index</b> is on microfilm at the NYC Municipal Archives (a visit, or a paid search), and the parish register of whichever church married them is the other copy. Grandma Jean's family was in Coney Island; John and Nancy married at Our Lady of Loreto in 1931.</p></div>
+    <div><h4>The Italian acts still to pull</h4><p>In <b>Lascari</b>: Giuseppe Lisuzzo's birth (about 1866–67) and death, his marriage to Maria Stella Cirrito, and the 1926 marriage of Giuseppe Jr. and Santa. The registers to 1910 are online but have no name index, so each means reading a year's own index page. In <b>Milazzo</b>: Natala Trimboli's birth (about 1872) and the deaths of Giovanni and Adelaide. In <b>Brooklyn</b>: Natala's death certificate (she died between 1910 and 1920; the family chart says 1912).</p></div>
+    <div><h4>Later: the legal side</h4><p>A consultation with an Italian citizenship lawyer on the two-year residence route, and on how a grandparent who died without ever being recognized is proven. The consulate's current document list for the "exclusively Italian grandparent" exception. Certified copies, apostilles and translations only after a route is chosen.</p></div>
+  </div>
+</div></section>
+
+<section id="method"><div class="wrap prose">
+  <h2>How this was found</h2>
+  <p>Everything on this page came from free, public sources: FamilySearch (name indexes and record images, including census pages browsed district by district when the index failed), the NYC Municipal Archives' historical vital records, the Italian State Archives' Antenati portal and FamilySearch's copies of the Termini Imerese and Messina court registers, the US National Archives (1940 census catalog), and the volunteer indexes of the Italian and German genealogy groups. The law was read from the consolidated text published by an Italian consulate, the Interior Ministry's operating circular, and the Italian Embassy in Washington.</p>
+  <p>Each record was read in full and transcribed into a private working file, with its archive, record number, stable web address and a checksum of the file, so every item here can be found again. Names and dates drift between records (Bonina / Bonino / Bonbonea; Cesare / Cesar; a birth year that moves by fourteen years); the discrepancies are listed in the working file because they are what a consulate asks about.</p>
+  <p class="small">Dad's side of the family (the Furino and Dascole lines) has its own file and will get its own page.</p>
+</div></section>
+
+<footer><div class="wrap">Compiled by Sal with Claude, October 2026. Research copies of public records; living relatives by first name only; not legal advice.</div></footer>
+
+</body>
+</html>
