@@ -7,7 +7,9 @@ Archives, the Italian State Archives' Antenati portal, the US National Archives)
 - `index.html` — landing page; `bonina-lisuzzo.html` — the Bonina & Lisuzzo page (GitHub Pages serves both)
 - `records/web/` — reduced copies of each record for the page
 - `records/full/` — the full-resolution research copies (not certified; for filing, certified
-  copies are ordered from the archive named under each record)
+  copies are ordered from the archive named under each record). A few records are scans of papers
+  the family kept (marked "kept by the family"), and the Bonina section carries the ancestor
+  sheets of a cousin's compiled family tree.
 
 Living relatives, and our grandparents, appear by first name only. Research copies, not legal advice. Compiled by Sal
 with Claude; the private working files (full tree, search log, checksums) are kept separately.
